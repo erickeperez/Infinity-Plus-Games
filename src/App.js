@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
+import RegF from './Registration'
 
 function App() {
 // var myHeaders = new Headers();
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <div className="App">
+      <RegF />
     </div>
   );
 }
