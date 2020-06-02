@@ -3,7 +3,7 @@ import React from 'react';
 function Registration() {
     return(
         <div class="form-wrapper">
-            <h1 class="reg-title"> Infinity Games Registration</h1>
+            <h1 class="reg-title"> Infinity Plus Games Registration</h1>
             <div class="main-info">
                 <div class="main-spacing-top">
                 <form>
@@ -27,6 +27,8 @@ function Registration() {
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-Enter Password"/>
                 </div>
+
+                <button type="button" class="btn btn-primary reg-btn">Register</button>
 
                 </form>
                 </div>
