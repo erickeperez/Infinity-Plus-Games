@@ -25,3 +25,10 @@
 .main-spacing-top{
     padding: 3em;
 }
+
+.reg-btn {
+    margin-top: 3em;
+    margin-left: 10em;
+    text-align: center;
+    width: 120px !important;
+}
