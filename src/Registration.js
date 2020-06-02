@@ -2,33 +2,33 @@ import React from 'react';
 
 function Registration() {
     return(
-        <div class="form-wrapper">
-            <h1 class="reg-title"> Infinity Plus Games Registration</h1>
-            <div class="main-info">
-                <div class="main-spacing-top">
+        <div className="form-wrapper">
+            <h1 className="reg-title"> Infinity Plus Games Registration</h1>
+            <div className="main-info">
+                <div className="main-spacing-top">
                 <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div className="form-group">
+                    <label htmlFor="Email">Email address</label>
+                    <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email"/>
+                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleInputName">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName" placeholder="Name"/>
+                <div className="form-group">
+                    <label htmlFor="Name">Name</label>
+                    <input type="text" className="form-control" id="Name" placeholder="Name"/>
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                <div className="form-group">
+                    <label htmlFor="Password">Password</label>
+                    <input type="password" className="form-control" id="Password" placeholder="Password"/>
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-Enter Password"/>
+                <div className="form-group">
+                    <label htmlFor="Password Verified">Password</label>
+                    <input type="password" className="form-control" id="Password Verified" placeholder="Re-Enter Password"/>
                 </div>
 
-                <button type="button" class="btn btn-primary reg-btn">Register</button>
+                <button type="button" className="btn btn-primary reg-btn">Register</button>
 
                 </form>
                 </div>
