@@ -1,0 +1,21 @@
+/*  Fonts included
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+.reg-title{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-wrapper{
+    padding: 3em 0 1em;
+}
+.main-info{
+    width: 35%;
+    margin: 3em auto;
+    background: rgba(4, 29, 247, 0.18);
+    background-size: cover;
+}
+.main-spacing-top{
+    padding: 3em;
+}
