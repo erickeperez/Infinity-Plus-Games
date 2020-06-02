@@ -2,32 +2,39 @@ import React from 'react';
 
 function Registration() {
     return(
-        <form>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
+        <div class="form-wrapper">
+            <h1 class="reg-title"> Infinity Plus Games Registration</h1>
+            <div class="main-info">
+                <div class="main-spacing-top">
+                <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
 
-        <div class="form-group row">
-            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Last Name</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"/>
+                <div class="form-group">
+                    <label for="exampleInputName">Name</label>
+                    <input type="text" class="form-control" id="exampleInputName" placeholder="Name"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-Enter Password"/>
+                </div>
+
+                <button type="button" class="btn btn-primary reg-btn">Register</button>
+
+                </form>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group row">
-            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"/>
-            </div>
         </div>
-
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
-        </div>
-        </form>
     )
 }
 

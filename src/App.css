@@ -1,0 +1,34 @@
+/*  Fonts included
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+.reg-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: black;
+    font-weight: 100;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+.form-wrapper{
+    padding: 3em 0 1em;
+}
+.main-info{
+    width: 35%;
+    margin: 3em auto;
+    background: rgba(4, 29, 247, 0.18);
+    background-size: cover;
+}
+.main-spacing-top{
+    padding: 3em;
+}
+
+.reg-btn {
+    margin-top: 3em;
+    margin-left: 10em;
+    text-align: center;
+    width: 120px !important;
+}
