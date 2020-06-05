@@ -38,7 +38,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     display: block;
     border: none;
     padding: 0.8em;
-    border: solid 1px #fff;
+    border: solid 1px #000;
     -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
     transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
@@ -46,20 +46,16 @@ input[type="text"], input[type="email"], input[type="password"] {
     background-position: -800px 0;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: #fff;
     font-family: 'Roboto', sans-serif;
   }
-  
-  input.email, input.text.w3lpass {
+  input.email, input.text {
     margin: 2em 0;
   }
-  
   .text:focus, .text:valid {
     box-shadow: none;
     outline: none;
     background-position: 0 0;
   }
-  
   .text:focus::-webkit-input-placeholder, .text:valid::-webkit-input-placeholder {
     color: white;
     font-size: .9em;
@@ -70,22 +66,18 @@ input[type="text"], input[type="email"], input[type="password"] {
     transform: translateY(-30px);
     visibility: visible !important;
   }
-  
   ::-webkit-input-placeholder {
     color: #fff;
     font-weight: 100;
   }
-  
   :-moz-placeholder {
     /* Firefox 18- */
     color: #fff;
   }
-  
   ::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff;
   }
-  
   :-ms-input-placeholder {
     color: #fff;
   }
