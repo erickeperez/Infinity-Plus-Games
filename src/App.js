@@ -3,6 +3,7 @@ import Game from './components/Game'
 import './App.css';
 import RegF from './components/Registration'
 
+
 function App() {
   return (
     <div className="App">
