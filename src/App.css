@@ -5,7 +5,36 @@
 
 
 /* Platform Component CSS Below */
+
+.contentContainer-1440 {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.consoleContent {
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center space-around;
+  align-items: center;
+}
+
+.platformLogos {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
 .ps4 {
+  width: 200px;
+  height: 200px;
+}
+.xbox {
+  width: 200px;
+  height: 200px;
+}
+.nintendo {
   width: 200px;
   height: 200px;
 }
