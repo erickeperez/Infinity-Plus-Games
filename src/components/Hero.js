@@ -1,11 +1,11 @@
 import React from 'react'
-import heroBann from '../images/hero-banner.jpg'
+import hero3 from '../images/hero3.jpeg'
  
 function Hero() {
     return(
         <div className="heroContainer">
             <div className="hero">
-                <img src={heroBann} />
+                <img src={hero3}  alt="Carousel Banner" />
                 <h2>Welcome to our infinite worlds</h2>
             </div>
         </div>
