@@ -3,6 +3,20 @@
     font-family: 'Roboto', sans-serif;
 */
 
+/* Hero Component CSS Below */
+.heroContainer{
+  display: block;
+}
+
+
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 200px);
+  min-height: 400px;
+  max-height: 720px;
+}
+
 
 /* Platform Component CSS Below */
 
