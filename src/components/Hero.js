@@ -1,38 +1,47 @@
 import React from 'react'
-import hero4 from '../images/hero4.jpg'
  
 function Hero() {
+  fetch("https://newsapi.org/v2/top-headlines?sources=ign&pageSize=3&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d")
+    .then((blob) => blob.json())
+    .then((data) => {
+      console.log(data.articles);
+      data.articles.forEach((r) => {
+        var paragraph = document.getElementById("carousel-inner");
+        paragraph.insertAdjacentHTML(
+          "afterbegin",
+          `<div className="carousel-item active">
+          <img className="d-block w-100" src="${r.urlToImage}" alt="Game Slide"/>
+        </div>`
+        );
+      });
+      return data;
+    })
+    .catch((e) => {
+      console.log(e);
+      return e;
+    });
+    
     return(
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner hero"  style={{backgroundImage: `url(${hero4})`}}>
-          <div className="carousel-item active">
-            {/* <img className="d-block w-100" src="..." alt="First slide" style={{backgroundImage: `url(${hero4})`}}> */}
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="# " alt="Second slide"/>
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="# " alt="Third slide"/>
-          </div>
-        </div>
-        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only">Next</span>
-        </a>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" id="carousel-inner">
+       
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
     )
 } 
-
-
 
 export default Hero
 
