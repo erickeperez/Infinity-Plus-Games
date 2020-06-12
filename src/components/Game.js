@@ -3,7 +3,7 @@ import emptyImage from "../images/empty.png";
 
 function Game() {
   var myHeaders = new Headers();
-  myHeaders.append("user-key", "f386d39d808b70168025bfadd8585517");
+  myHeaders.append("user-key", process.env.REACT_APP_GAME_API_KEY);
   myHeaders.append("Content-Type", "text/plain");
   myHeaders.append(
     "Cookie",
