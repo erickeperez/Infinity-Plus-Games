@@ -1,7 +1,7 @@
 import React from 'react'
  
 function Hero() {
-  fetch("https://newsapi.org/v2/top-headlines?sources=ign&pageSize=3&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d")
+  fetch(`https://newsapi.org/v2/top-headlines?sources=ign&pageSize=3&apiKey=${process.env.REACT_APP_HERO_API_KEY}`)
     .then((blob) => blob.json())
     .then((data) => {
       console.log(data.articles);
