@@ -21,7 +21,7 @@ function Hero() {
   <Carousel.Item> 
     <div>
     <img
-          className="d-block w-100"
+          className="d-block w-100 img-responsive"
           key={index}
           src={arr.urlToImage}
           alt="First slide"
