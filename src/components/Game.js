@@ -28,7 +28,6 @@ function Game() {
     .then((data) => {
       // console.table(data);
       data.forEach((r) => {
-        console.table("Name ", r.name, "Cover ", r.cover);
         var paragraph = document.getElementById("game-container-row");
 
         // {r.cover == "" ? `<img src="#" className="card-img-top" alt="" /> ` : `<img src="${r.cover}" className="card-img-top" alt="" /> `  }
