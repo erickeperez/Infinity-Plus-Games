@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Game from './components/Game'
 import './App.css';
 import Hero from './components/Hero'
-import Pagination from './components/Pagination'
+import PaginationContainer from './components/PaginationContainer'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Hero />
       <Game />
-      <Pagination />
+      <PaginationContainer />
     </div>
   );
 }
