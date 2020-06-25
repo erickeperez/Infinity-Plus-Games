@@ -4,7 +4,6 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="/#">
           Infinity Plus Games
@@ -46,7 +45,6 @@ function Header() {
           </ul>
         </div>
       </nav>
-    </div>
   );
 }
 
